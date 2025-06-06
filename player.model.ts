@@ -1,14 +1,15 @@
-type Player = {
+export type Player = {
   // Identité
   id: string;
   name: string;
   age: number;
   nationality: string;
-  position: string; // ex: "ST", "MC", "GK"
-  preferredFoot: 'left' | 'right' | 'both';
+  position: string[]; // ex: "ST", "MC", "GK"
+  preferredFoot: "left" | "right" | "both";
   height: number; // en cm
   weight: number; // en kg
   avatarUrl?: string;
+  clubId: number; // PSG 10 / Barca 20
 
   // Caractéristiques physiques (/20)
   physical: {
