@@ -1,0 +1,4 @@
+packages:
+  - "lib"
+  - "next-app"
+  - "nest-backend"
